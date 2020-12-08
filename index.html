@@ -9,7 +9,23 @@
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
+.w3-half img:hover{opacity:1} 
+.w3-half img {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
 <body>
 
@@ -45,88 +61,97 @@ body {font-size:16px;}
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>JACQUELINE PEZAN</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>Bachelor of Science</b></h1>
-    <h1 class="w3-xlarge w3-text-dark-grey"><b>Lewis University</b></h1>
-    <h1 class="w3-xlarge w3-text-dark-grey"><b>Graduation May 2021</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-  </div>
-  
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic Information</li>
-        <li class="w3-padding-16">
-        	<h5>Location: </h5>
-            <span class='w3-opacity'>Chicago, IL</span></li>
-        <li class="w3-padding-16">
-        	<h5>Major: </h5>
-            <span class='w3-opacity'>Chemistry</span></li>
-        <li class="w3-padding-16">
-        	<h5>Minor: </h5>
-            <span class='w3-opacity'>Mathematics</span></li>
-        <li class="w3-padding-16">
-        	<h5>Proficient Speaking Languages: </h5>
-            <span class='w3-opacity'>English and Spanish</span></li>
-      </ul>
-    </div>
-        
-    <div class="w3-half">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-red w3-xlarge w3-padding-32">Connect With Me</li>
-        <img src='https://media-exp1.licdn.com/dms/image/C4E03AQEbV6njBYwBoA/profile-displayphoto-shrink_400_400/0?e=1612396800&v=beta&t=LJqZcy4ONyFwSeOx-HuBIFFEmTTOfsopkiEOwg0QFZ8'>
-        <li class="w3-padding-16">Email</li>
-        <li class="w3-padding-16">LinkedIN</li>
-        <li class="w3-padding-16">GitHub</li>
-        <li class="w3-padding-16">Twitter</li>
-        
-      </ul>
-    </div>
-  </div>
- 
+    <h1 class="w3-jumbo"><b>JACQUELINE PEZAN</b></h1> </div>
     
- <div class="w3-row-padding">
-    <div class="w3-full w3-margin-bottom">
-      <ul class="w3-ul w3-light-grey">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32 w3-center">Photos</li>
-        
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
-      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    <div class='w3-container' style='margin-top:20px'>
+    <div class='w3-half'>
+    <h1 class="w3-xlarge w3-text-red"><b>Bachelor of Science</b></h1>
+    <h1 class="w3-large w3-text-dark-grey"><b>Lewis University</b></h1>
+    <h1 class="w3-large w3-text-dark-grey"><b>Graduation May 2021</b></h1>
     </div>
-
-    <div class="w3-half">
-      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
-    </div>
-  </div>
-
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
+    
+    <div class='w3-half'>
+    <img src='https://media-exp1.licdn.com/dms/image/C4E03AQEbV6njBYwBoA/profile-displayphoto-shrink_400_400/0?e=1612396800&v=beta&t=LJqZcy4ONyFwSeOx-HuBIFFEmTTOfsopkiEOwg0QFZ8' style='width:w3-half'> 
   </div>
   
-
+   <hr style="width:50px;border:5px solid red" class="w3-round">
+   
+     <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+</div>
+  
   <!-- Who I Am. -->
-  <div class="w3-container" id="services" style="margin-top:75px">
+  <div class="w3-container" id="services" style="margin-top:20px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Who I Am.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Traditional is not a word I would use to describe myself, nor is it a word that I would use to describe my educational experience. In my sophomore year of college, I was selected to join the Keleher Research Group (KRG) on a project further understanding the chemical mechanical planarization (CMP) process. My role in the project was to further understand the mechanisms behind surface-energy interactions between wafers and colloidal dispersions (slurry) and propose mechanistic models for said interactions. I found enjoyment in the hours-long spent on data analysis and the data-driven discussion that ensued. Although I found myself invigorated with the data collection and presentation processes, I knew technical lab work was not for me.  
 </p>
+
+  <div class='w3-container'>
+  <div class="row">
+  <div class="column">
+    <img src="img_snow.jpg" alt="Snow" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+  </div>
+  <div class="column">
+    <img src="img_forest.jpg" alt="Forest" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+  </div>
+</div> </div>
+        
+
+
     <p>Working in a small consulting firm this summer allowed me to better use my data analytics techniques. Methods of data collection and storage were outdated, and I helped implement new systems for better organization on Excel and created a user-friendly database for project navigation. I found enjoyment in process of acquiring, cleaning, and using the data which further ignited my interest in the data science field.  Also, as part of the research, I was tasked with at the consulting firm, I had to access the City of Chicago data portal to compile relevant information related to building permits and business licenses to assist our clients.
     </p>
+    
+      <div class='w3-container'>
+  <div class="row">
+  <div class="column">
+    <img src="img_snow.jpg" alt="Snow" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+  </div>
+  <div class="column">
+    <img src="img_forest.jpg" alt="Forest" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+  </div>
+</div> </div>
+        
+    
     <p>After I revealed my passion for data science and all the topics it encompassed, I registered for programming coursework and became skilled in Python, R, SQL, statistical learning and modeling, along with cloud computing and machine learning. My final capstone project focused on using liquid crystal (L.C.) sensor technology to combat the growing problem of laser attacks on private, commercial, and federal airlines. Using libraries like Matplotlib and Pandas in Python, I was able to extrapolate and statistically analyze data from the Federal Administration Aviation (FAA) and JMP to further model and manipulate data to draw correlations between optical properties in lasers to liquid crystals used for light polarization.  Using HTML and CSS, I published a webpage summarizing my project results along with my GitHub to allow for further data discussion and programming critiquing. This experience has not only taught me how to effectively pose and answer my research questions but also how to defend these findings by incorporating a false experience, controls, and event study in my analysis. 
+    
+      <div class='w3-container'>
+  <div class="row">
+  <div class="column">
+    <img src="img_snow.jpg" alt="Snow" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+  </div>
+  <div class="column">
+    <img src="img_forest.jpg" alt="Forest" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+  </div>
+</div> </div>
+        
     <p>My love and interest in this topic are reflected in my academic success, as I discovered who I was as a person and scientist, I was able to better understand and rationalize my coursework material.  Apart from academics and research, I’ve also taken my academic learning to a mentoring level. Since 2018, I have been an active member in scientific community outreach around the Chicagoland area, involved in events ranging from judging elementary/middle school science fairs to performing chemistry demonstrations to help young children. My goal is to inspire others, especially Latina women like myself, to find their passion for S.T.E.M. just like my research mentor and P.I., Dr. Jason Keleher, helped me. I extended my mentoring work to my school where I worked as a General Chemistry II Lab research mentor. Furthermore, I immerse myself in enriching global experiences such as using my Spanish to communicate with people from a variety of upbringings and encourage them by telling them my story in the S.T.E.M. field to push for greater diversity and more inclusivity within the data science community. 
     </p>
   </div>
+  
+    <div class='w3-container'>
+  <div class="row">
+  <div class="column">
+    <img src="img_snow.jpg" alt="Snow" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+  </div>
+  <div class="column">
+    <img src="img_forest.jpg" alt="Forest" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+  </div>
+</div> </div>
+        
+  
   
   <!-- Where I Want To Go. -->
   <div class="w3-container" id="designers" style="margin-top:75px">
@@ -137,6 +162,20 @@ body {font-size:16px;}
     </p>
   </div>
   
+    <div class='w3-container'>
+  <div class="row">
+  <div class="column">
+    <img src="img_snow.jpg" alt="Snow" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+  </div>
+  <div class="column">
+    <img src="img_forest.jpg" alt="Forest" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+  </div>
+</div> </div>
+        
+  
     <!-- Who I Want To Be. -->
   <div class="w3-container" id="designers" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Who I Want To Be.</b></h1>
@@ -146,51 +185,24 @@ body {font-size:16px;}
     </p>
     </div>
 
-
-
-  <!-- 
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>John Doe</h3>
-          <p class="w3-opacity">CEO & Founder</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
-          <h3>Jane Doe</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container">
-          <h3>Mike Ross</h3>
-          <p class="w3-opacity">Architect</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  
-  <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
-</div>
-
+  <div class='w3-container'>
+  <div class="row">
+  <div class="column">
+    <img src="img_snow.jpg" alt="Snow" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+  </div>
+  <div class="column">
+    <img src="img_forest.jpg" alt="Forest" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+  </div>
+</div> </div>
+        
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <p>Please feel free to contact me at my school email for any questions or comments.</p>
     <form action="/action_page.php" target="_blank">
       <div class="w3-section">
         <label>Name</label>
