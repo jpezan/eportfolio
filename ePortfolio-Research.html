@@ -5,36 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-</style>
 <style type="text/css">
 <!--
  .tab { margin-left: 40px; }
 -->
 
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+body {font-size:-6px;}
+.w3-half img{margin-bottom:-6px;margin-top:8px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1} 
 .w3-half img {
+
   box-sizing: border-box;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 </style>
 <body>
@@ -135,7 +124,15 @@ from silicon wafers
    
   </div>
     
-    
+ <!--Images-->
+
+<div class='w3-container' style='margin-top:8px'>
+    <img src="img_chania.jpg" class='center' style="width:50%">
+  </div>
+
+</div> </div>
+ 
+ 
 <!-- End page content -->
 </div>
 
@@ -154,13 +151,6 @@ function w3_close() {
   document.getElementById("myOverlay").style.display = "none";
 }
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
 </script>
 </div>
 
