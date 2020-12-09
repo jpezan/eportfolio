@@ -12,7 +12,14 @@
 
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:-6px;}
- 
+ }
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .rect {
     height: 100px;
     width: 50px;
@@ -124,6 +131,7 @@ from silicon wafers
   </div>-->
  
  <div class='w3-container' style='margin-top:8px'>
+  <div class='row'>
    <div class='rect'>
     <img src="research1.pg" style="width:100%">
    </div>
@@ -133,6 +141,7 @@ from silicon wafers
  </div>
   
   <div class='w3-container' style='margin-top:8px'>
+   <div class='row'>
    <div class='rect'>
     <img src="research3.pg" style="width:100%">
   </div>
