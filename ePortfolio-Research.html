@@ -19,6 +19,18 @@ body {font-size:-6px;}
   margin-right: auto;
 }
 
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
 <body>
 
@@ -121,11 +133,30 @@ from silicon wafers
  <!--Images-->
 
 <div class='w3-container' style='margin-top:8px'>
-    <img src="resume1.jpg" class='center' style="width:50%">
+    <img src="research1.jpg" class='center' style="width:50%">
   </div>
-
-</div> </div>
+ 
+ <div class='w3-container' style='margin-top:8px'>
+  <div class='row'>
+   <div class='column'>
+    <img src="research2.pg" style="width:100%">
    </div>
+   <div class='column'>
+    <img src="research3.jpg" style="width:100%">
+  </div>
+ </div>
+  
+  <div class='w3-container' style='margin-top:8px'>
+  <div class='row'>
+   <div class='column'>
+    <img src="research2.pg" style="width:100%">
+  </div>
+   <div class='column'>
+    <img src="research3.jpg" style="width:100%">
+  </div>
+   </div>
+  
+
  
  
 <!-- End page content -->
