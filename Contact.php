@@ -16,7 +16,7 @@ EMAIL;
 $header = "From: $email";
 
 if (isset($_POST)) {
-    if ($name == '' || $email == '' || $phone == '' || $message = '') {
+    if ($name == '' || $email == '' || $message = '') {
         $feedback = 'Please fill out any missing fields.';
 
     } else {
