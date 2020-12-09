@@ -12,7 +12,17 @@
 
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:-6px;}
- }
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1} 
+.w3-half img {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
 
 /* Clearfix (clear floats) */
 .row::after {
@@ -20,11 +30,6 @@ body {font-size:-6px;}
   clear: both;
   display: table;
 }
-.rect {
-    height: 100px;
-    width: 50px;
-    display: inline-block;
- }
 </style>
 <body>
 
@@ -132,20 +137,20 @@ from silicon wafers
  
  <div class='w3-container' style='margin-top:8px'>
   <div class='row'>
-   <div class='rect'>
-    <img src="research1.pg" style="width:100%">
+   <div class='column'>
+    <img src="research1.jpg" style="width:100%">
    </div>
-   <div class='rect'>
+   <div class='column'>
     <img src="research2.jpg" style="width:100%">
   </div>
  </div>
   
   <div class='w3-container' style='margin-top:8px'>
    <div class='row'>
-   <div class='rect'>
-    <img src="research3.pg" style="width:100%">
+   <div class='column'>
+    <img src="research3.jpg" style="width:100%">
   </div>
-   <div class='rect'>
+   <div class='column'>
     <img src="research4.jpg" style="width:100%">
   </div>
    </div>
