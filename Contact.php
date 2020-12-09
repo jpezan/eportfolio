@@ -1,17 +1,16 @@
+
 <?php
 $to = 'jacquelinempezan@lewisu.edu';
 $subject = 'ePortfolio Email Contact';
 
-$name = $_POST ['name'];
-$email = $_POST ['email'];
-$message = $_POST ['message'];
+$name = $_POST ['Name'];
+$email = $_POST ['Email'];
+$message = $_POST ['Message'];
 
 $body = <<<EMAIL
-From $name
-$message.
 From : $name
 Email : $email
-Topic : $topic
+Topic : $message
 EMAIL;
 $header = "From: $email";
 
