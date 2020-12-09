@@ -12,8 +12,30 @@ body {font-size:16px;}
 .w3-half img:hover{opacity:1}
 </style>
 <style type="text/css">
-	
+<!--
+ .tab { margin-left: 40px; }
+-->
 
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1} 
+.w3-half img {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
 <body>
 
@@ -24,11 +46,11 @@ body {font-size:16px;}
     <h3 class="w3-padding-64"><b>ePortfolio</b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="ePortfolio-Resume.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Resume</a> 
-    <a href="ePortfolio-Capstone.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Capstone Project</a> 
-    <a href="ePortfolio-Research.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Research</a> 
-    <a href="ePortfolio-Academics.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Academics</a> 
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Resume</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Capstone Projecrt</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Research</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Academics</a> 
   </div>
 </nav>
 
@@ -46,22 +68,50 @@ body {font-size:16px;}
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="Capstone-Project">
-    <h1 class="w3-xxlarge w3-text-dark-grey"><b>Jacqueline Pezan</b></h1>
+    <h1 class="w3-xxlarge w3-text-dark-grey"><b>Projects</b></h1>
     <h1 class="w3-xlarge w3-text-red"><b>Senior Capstone Project</b></h1>
     <h1 class='w3-large w3-text-black,'style='text-align: center'><b>Correlating Federal Aviation Administration (FAA) Data Events to Calculate Optimal Response Time for Laser Blocking Sensors</b></h1>
     <h1 class='w3-small w3-opacity,' style='text-align: center'><b>Jacqueline M. Pezan and Jason J. Keleher</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   </div>
   
- <div class="w3-container">
-        <p><i class="w3-margin-right w3-large w3-text-teal"></i>Final Project Assignment: Data Modeling in Python</p>
-          <p><i class="w3-margin-right w3-large w3-text-teal"></i>Introduction to Computer Science</p>
-          <p><i class="w3-margin-right w3-large w3-text-teal"></i>jacquelinempezan@lewis.edu</p>
-          <p><i class="w3-margin-right w3-large w3-text-teal"></i>Last Update: 12-01-2020 (Sprint 7)</p>
-
-          
-  <hr style="width:50px;border:5px solid red" class="w3-round">
+  <!-- Executive Summary -->
+  <div class="w3-container" id="Capstone-Project" style="margin-top:5px">
+    <h1 class="w3-large w3-text-grey"><b>Executive Summary</b></h1>
   
+    <p>According to the Federal Aviation Administration (FAA), the threat of laser attacks on commercial, private, and federal planes is increasing. Studies report that a majority of the lasers used were easily obtained via commercial sources. Laser threats can severely affect the pilot’s ability to operate the aircraft due to flash blindless depending on the laser strength and distance from occurrence. Many airlines have implemented laser safety glasses for pilots and procedural changes as a solution; however, both proposed solutions have significant drawbacks. The glasses distort the colors seen by the human eye, and procedural changes from the flight crew leave room for human error. An annual summary report released by the (FAA) showed that in 2019, there were 6,136 reports of people on the ground shining lasers at aircrafts1. This work will employ liquid crystal (L.C.) sensor technology which will switch upon laser radiation via changes in the electric field. Nematic crystals change direction spontaneously when activated via photoisomerization processers. This “switching” effect occurs upon optical and electrical perturbation through cis-trans isomerization, flipping the direction of the L.C.s and act as a polarizing lens. The ultimate goal of this work is to draw a correlation between existing data in the FAA databases to determine the necessary properties of liquid crystal for optimal safety performance. 
+</p>
+
+  <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+   
+    <!-- Introduction -->
+  <div class="w3-container" id="Capstone-Project" style="margin-top:5px">
+    <h1 class="w3-large w3-text-grey"><b>Introduction</b></h1>
+    <p> In recent years, laser devices have become less expensive and more commonplace in products like CD/DVD players, supermarket scanners, construction, medical and industrial purposes. While pointing a laser at aircraft is a federal crime, reports indicate that the number of laser incidents is dramatically increasing despite heightened public awareness of the serious safety risk posed by lasers. Laser attacks pose a threat to aviation safety due to how lasers affect a pilot’s vision upon impact. 
+    </p>
+    <img src='URL' alt='Laser Attack Simulation'> 
+    
+    <p> The Federal Aviation Administration (FAA) imposed fines for “interfering” and “incapacitation” of a flight member by a laser. However, despite this regulation in 2012, there were still 3,482 laser incidents1. One of the solutions available from airlines to combat laser detriment is protective eyewear that protects the wearer from green laser energy. However, filtering light reduces the total amount of light entering the eye that inversely impacts visibility. Procedural changes implemented to combat laser detriment include physically shielding one’s eyes from the laser beam in an attempt to reduce beam visibility within the aircraft; however, attacks can be unpredictable, and these methods can be unreliable. </p>
+    
+    <p>Stimuli-responsive photonic crystals have received a lot of interest in the last few decades for possible applications in the field of optical sensors. The periodic alternation of the refractive index in these photonic materials leads to the reflection of light that is dependent on applied voltage3. Liquid crystals are attractive materials for optical sensors due to their ability to form one-dimensional photonic structures through self-assembly methods. The liquid crystalline phase of a molecule is the phase between the liquid-state and solid-state of the crystals. The nematic phase shifts the crystals to a 90-degree angle and breaking rotational symmetry, which results in a shift in the polarization of light (photochemical switching). </p>
+    
+        <img src='URL' alt='Nematic Crystals'> 
+    <p>By studying the factors of laser interference, the electro-optical properties of nematic crystals can be deduced. The strength of these lasers is continuously increasing, allowing for attacks at greater altitudes to occur, intensifying the effects on visual impairment that are dependent on the wavelength of the laser, power level, and duration of exposure. The transmission of light is critical to understanding the crystalline structure necessary for light deflection. FAA databases and reports will be utilized to conduct data analysis. </p>
+  
+  <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+<!--CS Project-->  
+ <div class="w3-container" id="Capstone-Project" style="margin-top:5px">
+
+ <h1 class="w3-xlarge w3-text-red"><b>Intro to Computer Science Final Project</b></h1>
+    <h1 class='w3-large w3-text-black,'style='text-align: center'><b>Modeling Federal Aviation Administration (FAA) Data for 2019 Reports</b></h1>
+    <h1 class='w3-small w3-opacity,' style='text-align: center'><b>Professor: Eric Pogue</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+ 
+  <div class="w3-container">
   <p class="w3-large"><b><i class="w3-margin-right"></i>Project Overview</b></p>
           
           <h8 class="w3-opacity"><b>Project Description</b></h8> 
@@ -118,7 +168,7 @@ body {font-size:16px;}
           <p></p>
           <hr>
       
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Use of External Concepts</b></p>
+          <p class="w3-large w3-text-theme"><b><i class="w3-margin-right"></i>Use of External Concepts</b></p>
           <ol>
        	<li> <p> Using different libraries in Python</p> </li>
        <ul>
@@ -130,52 +180,49 @@ body {font-size:16px;}
           </ol>
           <p></p>
           <hr>
-          
-   
-        </div>
       </div>
 
+<!--Images-->
 
-
-
-  <!-- Executive Summary -->
-  <div class="w3-container" id="Capstone-Project" style="margin-top:5px">
-    <h1 class="w3-large w3-text-grey"><b>Executive Summary</b></h1>
-  
-    <p>According to the Federal Aviation Administration (FAA), the threat of laser attacks on commercial, private, and federal planes is increasing. Studies report that a majority of the lasers used were easily obtained via commercial sources. Laser threats can severely affect the pilot’s ability to operate the aircraft due to flash blindless depending on the laser strength and distance from occurrence. Many airlines have implemented laser safety glasses for pilots and procedural changes as a solution; however, both proposed solutions have significant drawbacks. The glasses distort the colors seen by the human eye, and procedural changes from the flight crew leave room for human error. An annual summary report released by the (FAA) showed that in 2019, there were 6,136 reports of people on the ground shining lasers at aircrafts1. This work will employ liquid crystal (L.C.) sensor technology which will switch upon laser radiation via changes in the electric field. Nematic crystals change direction spontaneously when activated via photoisomerization processers. This “switching” effect occurs upon optical and electrical perturbation through cis-trans isomerization, flipping the direction of the L.C.s and act as a polarizing lens. The ultimate goal of this work is to draw a correlation between existing data in the FAA databases to determine the necessary properties of liquid crystal for optimal safety performance. 
-</p>
-
-  <hr style="width:50px;border:5px solid red" class="w3-round">
-   
-    <!-- Introduction -->
-  <div class="w3-container" id="Capstone-Project" style="margin-top:5px">
-    <h1 class="w3-large w3-text-grey"><b>Introduction</b></h1>
-    <p> In recent years, laser devices have become less expensive and more commonplace in products like CD/DVD players, supermarket scanners, construction, medical and industrial purposes. While pointing a laser at aircraft is a federal crime, reports indicate that the number of laser incidents is dramatically increasing despite heightened public awareness of the serious safety risk posed by lasers. Laser attacks pose a threat to aviation safety due to how lasers affect a pilot’s vision upon impact. 
-    </p>
-    <img src='URL' alt='Laser Attack Simulation'> 
-    
-    <p> The Federal Aviation Administration (FAA) imposed fines for “interfering” and “incapacitation” of a flight member by a laser. However, despite this regulation in 2012, there were still 3,482 laser incidents1. One of the solutions available from airlines to combat laser detriment is protective eyewear that protects the wearer from green laser energy. However, filtering light reduces the total amount of light entering the eye that inversely impacts visibility. Procedural changes implemented to combat laser detriment include physically shielding one’s eyes from the laser beam in an attempt to reduce beam visibility within the aircraft; however, attacks can be unpredictable, and these methods can be unreliable. </p>
-    
-    <p>Stimuli-responsive photonic crystals have received a lot of interest in the last few decades for possible applications in the field of optical sensors. The periodic alternation of the refractive index in these photonic materials leads to the reflection of light that is dependent on applied voltage3. Liquid crystals are attractive materials for optical sensors due to their ability to form one-dimensional photonic structures through self-assembly methods. The liquid crystalline phase of a molecule is the phase between the liquid-state and solid-state of the crystals. The nematic phase shifts the crystals to a 90-degree angle and breaking rotational symmetry, which results in a shift in the polarization of light (photochemical switching). </p>
-    
-        <img src='URL' alt='Nematic Crystals'> 
-    <p>By studying the factors of laser interference, the electro-optical properties of nematic crystals can be deduced. The strength of these lasers is continuously increasing, allowing for attacks at greater altitudes to occur, intensifying the effects on visual impairment that are dependent on the wavelength of the laser, power level, and duration of exposure. The transmission of light is critical to understanding the crystalline structure necessary for light deflection. FAA databases and reports will be utilized to conduct data analysis. </p>
+<div class='w3-container' style='margin-top:50px'>
+  <div class="row">
+  <div class="column">
+    <img src="img_snow.jpg" alt="Snow" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
   </div>
-  
-  <hr style="width:50px;border:5px solid red" class="w3-round">
+  <div class="column">
+    <img src="img_forest.jpg" alt="Forest" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+  </div>
+</div> </div>
 
-  
+<!--Images pt 2-->
 
-  <!-- Data Analysis -->
-  <div class="w3-container" id="Capstone-Project" style="margin-top:5px">
-    <h1 class="w3-large w3-text-grey"><b>Data Analysis</b></h1>
+<div class='w3-container' style='margin-top:50px'>
+  <div class="row">
+  <div class="column">
+    <img src="img_snow.jpg" alt="Snow" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+  </div>
+  <div class="column">
+    <img src="img_forest.jpg" alt="Forest" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+  </div>
+</div> </div>
+
+
+
+
  
  
   <!-- Resources-->
+  <div class='w3-container'>
    <p class="w3-large w3-text-theme"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Helpful Links/Resources</b></p>
           <a href="https://towardsdatascience.com/complete-guide-to-data-visualization-with-python-2dd74df12b5e">Data Visualization With Python</a>
           <p></p>
-  
+  </div>
     
     
 <!-- End page content -->
@@ -204,6 +251,9 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 </script>
+</div>
 
 </body>
 </html>
+
+
